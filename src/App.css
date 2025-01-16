@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #a2bbcf;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: #534f7c;
+  padding-top: 100px;
+}
+
+.CalcContainer {
+  width: 500px;
+  box-shadow: 0px 0px 5px rgba(35, 35, 37, 0.788);
+  margin: auto;
+  margin-top: 20px;
+  background-color: #2D2F56;
+  border-radius: 10px;
+  padding: 0px 20px 30px 20px;
+}
+
+.NameContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+
+.NameContainer > p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.DispContainer {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.Display {
+  text-align: end;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: #212437;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Display::-webkit-scrollbar {
+  width: 6px; /* Adjust scrollbar width */
+}
+
+.Display::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent thumb */
+  border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+.Display::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly visible on hover */
+}
+
+.Display::-webkit-scrollbar-track {
+  background-color: transparent; /* Fully transparent track */
+}
+
+.ButtonContainer {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #252245;
+  border-radius: 10px;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.ButtonKeys {
+  flex: 20%;
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: #e3ddd2;
+  color: #2D2F56;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px #aca8a1;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.ButtonKeys:hover {
+  background-color: #b9b2a6;
+  opacity: 0.8;
+}
+
+.ButtonContainer :first-child,
+.ButtonContainer :nth-child(2),
+.ButtonContainer :nth-child(3){
+  flex: 100%;
+}
+
+.ButtonContainer :nth-child(14){
+  color: #e2dfda;
+  background-color: #b92b2b;
+  box-shadow: 0px 2px 1px #8c3333;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.ButtonContainer :nth-child(14):hover {
+  background-color: #d02d2d;
+  opacity: 0.8;
+}
+
+.ButtonContainer :last-child {
+  color: #e2dfda;
+  background-color: #5F6589;
+  box-shadow: 0px 2px 1px #545665;
+  transition: background-color 0.15s, opacity 0.15s;
+} 
+
+.ButtonContainer :last-child:hover {
+  background-color: #525773;
+  opacity: 0.8;
+}
